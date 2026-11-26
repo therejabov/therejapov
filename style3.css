@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #222;
+}
+
+
+header {
+    background: #e4002b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+}
+
+.logo {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #ffd6dc;
+}
+
+
+.hero {
+    min-height: 600px;
+    background: linear-gradient(135deg, #e4002b, #b90022);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 60px 10%;
+    overflow: hidden;
+}
+
+.hero-text {
+    width: 50%;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 75px;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+
+.hero-text p {
+    max-width: 550px;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.btn {
+    display: inline-block;
+
+    background: white;
+    color: #e4002b;
+
+    padding: 14px 30px;
+
+    border-radius: 30px;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #222;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+.cola {
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottle {
+    position: relative;
+
+    width: 180px;
+    height: 400px;
+
+    background: linear-gradient(
+        90deg,
+        #4b0008,
+        #e4002b,
+        #65000d
+    );
+
+    border-radius: 35px 35px 45px 45px;
+
+    box-shadow:
+        15px 20px 30px rgba(0, 0, 0, 0.35),
+        inset 15px 0 20px rgba(255, 255, 255, 0.15);
+
+    transform: rotate(8deg);
+}
+
+.cap {
+    position: absolute;
+
+    top: -25px;
+    left: 55px;
+
+    width: 70px;
+    height: 35px;
+
+    background: #e4002b;
+
+    border-radius: 8px 8px 3px 3px;
+}
+
+.bottle-neck {
+    position: absolute;
+
+    top: 5px;
+    left: 48px;
+
+    width: 84px;
+    height: 80px;
+
+    background: #c90025;
+
+    border-radius: 15px 15px 5px 5px;
+}
+
+.bottle-body {
+    position: absolute;
+
+    top: 120px;
+    left: 15px;
+
+    width: 150px;
+    height: 150px;
+
+    background: white;
+
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: rotate(-8deg);
+}
+
+.bottle-body span {
+    color: #e4002b;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    font-family: cursive;
+
+    text-align: center;
+}
+
+
+.about {
+    max-width: 900px;
+    margin: auto;
+
+    padding: 90px 30px;
+
+    text-align: center;
+}
+
+.about h2,
+.products h2,
+.contact h2 {
+    color: #e4002b;
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+.products {
+    background: #f7f7f7;
+    padding: 90px 8%;
+
+    text-align: center;
+}
+
+.cards {
+    max-width: 1100px;
+    margin: 50px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background: white;
+
+    padding: 35px 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 15px 35px rgba(228, 0, 43, 0.2);
+}
+
+.card-icon {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #e4002b;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+.contact {
+    text-align: center;
+
+    padding: 90px 30px;
+
+    background: #e4002b;
+    color: white;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+footer {
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+@media (max-width: 800px) {
+
+    .navbar {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 25px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 55px;
+    }
+
+    .cola {
+        width: 100%;
+        margin-top: 60px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .logo {
+        font-size: 26px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .hero-text h1 {
+        font-size: 45px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .bottle {
+        transform: scale(0.8) rotate(8deg);
+    }
+
+    .about h2,
+    .products h2,
+    .contact h2 {
+        font-size: 32px;
+    }
+}
